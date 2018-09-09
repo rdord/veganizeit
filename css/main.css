@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    background: #3c3275;
 }
 
 ::-moz-selection {
@@ -45,12 +48,12 @@ textarea {
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #000;  
     padding: 0.2em 0;
 }
 
 body {
-    background: #3c3275;
+    background: linear-gradient(to bottom, #352C70 1%,#3c3275 13%) no-repeat;
     color: #3ee244;
     position: relative;
     overflow-x: hidden;
@@ -60,6 +63,7 @@ body {
     position: absolute;
     right: -10px;
     top: 0;
+    z-index: 10;
 }
 
 .vy-heading {
@@ -69,6 +73,13 @@ body {
     flex-direction: column;
 }
 
+.vy-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .vy-subtext {
     /* font-family: 'brainwashregular'; */
     /* font-family: 'ballslight'; */
@@ -76,4 +87,17 @@ body {
     text-align: center;
     margin-top: 3rem;
     /* text-transform: uppercase; */
+    /* color: #c6e23e; */
+    /* color: #e2d03e; */
+    color: #5f55a0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.vy-video {
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+
+}
+
+.vy-video__embed {
+
 }
