@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root {
+    --green: #3ee244;
+}
+
 html {
     color: #222;
     font-size: 1em;
@@ -54,7 +58,7 @@ textarea {
 
 body {
     background: linear-gradient(to bottom, #352C70 1%,#3c3275 13%) no-repeat;
-    color: #3ee244;
+    color: var(--green);
     position: relative;
     overflow-x: hidden;
 }
@@ -73,12 +77,16 @@ body {
     flex-direction: column;
 }
 
-.vy-content {
+.vy-main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
+.vy-content {
+    position: relative;
+ }
 
 .vy-subtext {
     /* font-family: 'brainwashregular'; */
@@ -98,6 +106,9 @@ body {
 
 }
 
-.vy-video__embed {
-
+.vy-next-video__icon {
+    fill: var(--green);
+    position: absolute;
+    top: 0;
+    left: 0;
 }

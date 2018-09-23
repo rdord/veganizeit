@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="fonts/stylesheet.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script src="//www.youtube.com/iframe_api"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -29,23 +29,18 @@
                 <span>VEGANYT</span>
             </h1>
         </header>
-        <main  class="vy-content">
-            <div>
+        <main class="vy-main">
+            <div class="vy-content">
                 <p class="vy-subtext">vegan and easily veganizable foods</p>
 
                 <div class="vy-video" id="vy-video">
-                 <!--
-                    <br>
-                     <div class="vy-video__inner" id="vy-video__inner">
-                        <iframe id="vy-video__embed" class="vy-video__embed" width="853" height="480" src="//www.youtube.com/embed/videoseries?list=PLszeRFrbboBASL8JEvt_jztJyXaXHMf8-&rel=0&autoplay=1&index=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <br>
-                -->
-
-                    <div id="player"></div>
+                    <div id="vy-video__embed"></div>
                 </div>
-            </div>
 
+                <a id="vy-next-video" class="vy-next-video" href="javascript:;">
+                    <svg class="vy-next-video__icon" height="34.356" width="43.184" xmlns="http://www.w3.org/2000/svg"><g><path d="M21.331 7.429c2.223 0 4.312.725 6.066 2.086l3.48-4.352c-2.755-2.159-6.049-3.307-9.547-3.307-8.285 0-15.075 6.535-15.481 14.722H1.885l6.831 8.716 6.87-8.716h-4.153c.399-5.111 4.685-9.149 9.898-9.149zM33.995 9.427l-6.966 8.708h4.198c-.398 5.111-4.685 9.149-9.896 9.149a9.83 9.83 0 0 1-6.042-2.063l-.052-.04-3.447 4.374.041.031a15.331 15.331 0 0 0 9.5 3.271c8.285 0 15.074-6.535 15.48-14.722h4.039l-6.855-8.708z"/></g></svg>
+                </a>
+            </div>
         </main>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
